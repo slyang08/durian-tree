@@ -6,6 +6,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "dev:frontend": "pnpm --filter nextjs dev",
+    "dev:backend": "pnpm --filter express dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
