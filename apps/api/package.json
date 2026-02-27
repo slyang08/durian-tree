@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@liushushu/types": "workspace:*",
     "express": "^5.2.1"
   },
   "devDependencies": {

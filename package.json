@@ -14,5 +14,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "^5.0.6",
+    "cors": "2.8.6"
+  }
 }
