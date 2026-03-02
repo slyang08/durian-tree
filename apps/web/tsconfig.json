@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@liushushu/types/*": ["../../packages/shared/src/*"]
+      "@liushushu/shared/*": ["../../packages/shared/src/*"]
     }
   },
   "include": [
