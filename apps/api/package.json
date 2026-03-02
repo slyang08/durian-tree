@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@liushushu/types": "workspace:*",
+    "@liushushu/shared": "workspace:*",
     "@prisma/adapter-pg": "^7.4.2",
     "@prisma/client": "^7.4.2",
     "@types/cors": "2.8.19",

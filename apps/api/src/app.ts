@@ -1,6 +1,7 @@
 import cors from "cors";
 import express, { Express } from "express";
 
+import inventoryRoutes from "./routes/inventoryRoutes";
 import varietyRoutes from "./routes/varietyRoutes";
 
 export const app: Express = express();
@@ -12,6 +13,7 @@ app.use(cors({
 
 app.use(express.json());
 
+app.use("/inventories", inventoryRoutes);
 app.use("/varieties", varietyRoutes);
 
 app.get("/", (req, res) => {
