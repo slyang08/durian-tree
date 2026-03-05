@@ -1,3 +1,4 @@
+// apps/web/src/app/admin/inventories/create/page.tsx
 import InventoryForm from "@/features/inventory/components/InventoryForm";
 
 async function getVarieties() {

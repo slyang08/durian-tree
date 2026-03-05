@@ -1,7 +1,10 @@
+// apps/web/src/features/inventory/components/InventoryList.tsx
 "use client";
+
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getInventories } from "../api";
 import { DurianVariety } from "@liushushu/shared";
+import { getInventories } from "../api";
 
 interface InventoryItem {
   id: number;
@@ -94,6 +97,14 @@ export default function InventoryList({ storeId }: Props) {
           <h3 className="font-bold text-lg mb-2">
             {inv.date.split("T")[0]}
           </h3>
+
+          <Link
+            href={`/admin/inventories/${inv.date.split("T")[0]}`}
+            className="text-blue-500"
+          >
+            Edit
+          </Link>
+          
           <ul className="space-y-1">
             {inv.items.map(item => (
               <li key={item.id} className="flex justify-between">

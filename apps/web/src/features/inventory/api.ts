@@ -28,10 +28,30 @@ export async function getInventories(storeId: number) {
   return res.json();
 }
 
-export async function getInventoryByDate(storeId: number, date: string) {
-  const res = await fetch(`${BASE_URL}/inventories/${storeId}/${date}`, {
+export async function getInventoryByDate(storeId: number, date: Date) {
+  const res = await fetch(`${BASE_URL}/inventories/${storeId}/${date.toISOString().split("T")[0]}`, {
     cache: "no-store",
   });
   if (!res.ok) throw new Error("Failed to fetch inventory");
+  return res.json();
+}
+
+export async function updateInventoryItem(
+  itemId: number,
+  data: { quantity: number; price: number }
+) {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/inventory-items/${itemId}`,
+    {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
+
+  if (!res.ok) throw new Error("Failed to update item");
+
   return res.json();
 }
