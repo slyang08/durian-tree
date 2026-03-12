@@ -29,7 +29,7 @@ export default function MapPage() {
       <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
         <div>
           <h3 className="font-semibold text-green-800 mb-2">📍 地址</h3>
-          <p>27, Jalan Sri Bahari, George Town, 10050 George Town, Pulau Pinang, 馬來西亞</p>
+          <p>27, Jalan Sri Bahari, George Town, 10050 George Town, Pulau Pinang, Malaysia</p>
           <p>原串盅火渥(BEYONG HOTPOT)</p>
         </div>
         <div>
