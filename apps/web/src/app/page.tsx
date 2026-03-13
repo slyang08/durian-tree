@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-6 p-6">
+    <div className="flex min-h-screen flex-col items-center justify-center space-y-6 p-6">
       <h1 className="text-3xl font-bold">榴蓮樹樹</h1>
 
       <p className="text-gray-600">新鮮榴蓮每日更新</p>
